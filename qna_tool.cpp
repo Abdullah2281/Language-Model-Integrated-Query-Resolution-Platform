@@ -201,7 +201,7 @@ void QNA_tool::query(string question, string filename){
     }
     Node* x = get_top_k_para(result, k);
     std::cout << "Q: " << question << std::endl;
-    query_llm("api_call.py", x, k, "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", question);
+    query_llm("api_call.py", x, k, "your api key", question);
     return;
 }
 
